@@ -49,7 +49,6 @@ $STD apt-get update
 $STD pip install .
 $STD pip install -r requirements.txt
 if [ ! -f cert.pem ] || [ ! -f key.pem ]; then
-echo -e "${CHECKMARK} \e[1;92m Generating dummy SSL Certificate... \e[0m"
 openssl req -x509 -out cert.pem -keyout key.pem \
   -newkey rsa:2048 -nodes -sha256 \
   -subj '/CN=localhost' -extensions EXT -config <( \

@@ -47,11 +47,11 @@ function default_settings() {
 }
 
 function update_script() {
-  header_info
-  if [[ ! -d /opt/photoprism ]]; then
-    msg_error "No ${APP} Installation Found!"
-    exit
-  fi
+  # header_info
+  # if [[ ! -d /opt/photoprism ]]; then
+  #   msg_error "No ${APP} Installation Found!"
+  #   exit
+  # fi
 #   echo -e "\n ⚠️  Ensure you set 2vCPU & 3072MiB RAM MIMIMUM!!! \n"
 #   msg_info "Stopping PhotoPrism"
 #   sudo systemctl stop photoprism
@@ -79,7 +79,7 @@ function update_script() {
 #   sudo systemctl start photoprism
 #   msg_ok "Started PhotoPrism"
 #   msg_ok "Update Successful"
-  exit
+  # exit
 }
 
 start

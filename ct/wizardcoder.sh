@@ -18,8 +18,8 @@ APP="WizardCoder"
 var_disk="8"
 var_cpu="4"
 var_ram="2048"
-var_os="ubuntu"
-var_version="22.04"
+var_os="debian"
+var_version="11"
 variables
 color
 catch_errors
